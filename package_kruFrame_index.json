@@ -1,0 +1,29 @@
+{
+  "packages": [
+    {
+      "name": "kruframe",
+      "maintainer": "KruFrame Robot",
+      "websiteURL": "https://github.com/frame007/kruframerobot-avr",
+      "platforms": [
+        {
+          "name": "KruFrame Robot AVR",
+          "architecture": "avr",
+          "version": "1.1.5",
+          "category": "Contributed",
+          "url": "https://github.com/frame007/kruframerobot-avr/releases/download/v1.1.5/kruframe-avr-1.1.5.zip",
+          "archiveFileName": "kruframe-avr-1.1.5.zip",
+          "checksum": "SHA-256",
+          "size": "0",
+          "boards": [
+            {"name": "Board Model Nano (KruFrame Robot)"},
+            {"name": "Board Model Nano+ (KruFrame Robot)"},
+            {"name": "Board Model Pro (KruFrame Robot)"},
+            {"name": "Board Model Pro+ (KruFrame Robot)"}
+          ],
+          "toolsDependencies": []
+        }
+      ],
+      "tools": []
+    }
+  ]
+}
