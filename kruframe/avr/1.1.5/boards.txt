@@ -1,0 +1,194 @@
+# See: https://arduino.github.io/arduino-cli/latest/platform-specification/
+
+menu.cpu=Processor
+
+##############################################################
+
+modelnano.name=Board Model Nano (KruFrame Robot)
+
+modelnano.upload.tool=avrdude
+modelnano.upload.tool.serial=avrdude
+modelnano.upload.protocol=arduino
+
+modelnano.bootloader.tool=avrdude
+modelnano.bootloader.unlock_bits=0x3F
+modelnano.bootloader.lock_bits=0x0F
+
+modelnano.build.f_cpu=16000000L
+modelnano.build.board=AVR_nano
+modelnano.build.core=arduino
+modelnano.build.variant=eightanaloginputs
+
+## Arduino modelnano w/ ATmega328P
+## --------------------------
+modelnano.menu.cpu.atmega328=ATmega328P
+
+modelnano.menu.cpu.atmega328.upload.maximum_size=30720
+modelnano.menu.cpu.atmega328.upload.maximum_data_size=2048
+modelnano.menu.cpu.atmega328.upload.speed=115200
+
+modelnano.menu.cpu.atmega328.bootloader.low_fuses=0xFF
+modelnano.menu.cpu.atmega328.bootloader.high_fuses=0xDA
+modelnano.menu.cpu.atmega328.bootloader.extended_fuses=0xFD
+modelnano.menu.cpu.atmega328.bootloader.file=optiboot/optiboot_atmega328.hex
+
+modelnano.menu.cpu.atmega328.build.mcu=atmega328p
+
+## Arduino modelnano w/ ATmega328P (old bootloader)
+## --------------------------
+modelnano.menu.cpu.atmega328old=ATmega328P (Old Bootloader)
+
+modelnano.menu.cpu.atmega328old.upload.maximum_size=30720
+modelnano.menu.cpu.atmega328old.upload.maximum_data_size=2048
+modelnano.menu.cpu.atmega328old.upload.speed=57600
+
+modelnano.menu.cpu.atmega328old.bootloader.low_fuses=0xFF
+modelnano.menu.cpu.atmega328old.bootloader.high_fuses=0xDA
+modelnano.menu.cpu.atmega328old.bootloader.extended_fuses=0xFD
+modelnano.menu.cpu.atmega328old.bootloader.file=atmega/ATmegaBOOT_168_atmega328.hex
+
+modelnano.menu.cpu.atmega328old.build.mcu=atmega328p
+
+##############################################################
+
+
+modelnanoplus.name=Board Model Nano+ (KruFrame Robot)
+
+modelnanoplus.upload.tool=avrdude
+modelnanoplus.upload.tool.serial=avrdude
+modelnanoplus.upload.protocol=arduino
+
+modelnanoplus.bootloader.tool=avrdude
+modelnanoplus.bootloader.unlock_bits=0x3F
+modelnanoplus.bootloader.lock_bits=0x0F
+
+modelnanoplus.build.f_cpu=16000000L
+modelnanoplus.build.board=AVR_nano
+modelnanoplus.build.core=arduino
+modelnanoplus.build.variant=eightanaloginputs
+
+## Arduino modelnano w/ ATmega328P
+## --------------------------
+modelnanoplus.menu.cpu.atmega328=ATmega328P
+
+modelnanoplus.menu.cpu.atmega328.upload.maximum_size=30720
+modelnanoplus.menu.cpu.atmega328.upload.maximum_data_size=2048
+modelnanoplus.menu.cpu.atmega328.upload.speed=115200
+
+modelnanoplus.menu.cpu.atmega328.bootloader.low_fuses=0xFF
+modelnanoplus.menu.cpu.atmega328.bootloader.high_fuses=0xDA
+modelnanoplus.menu.cpu.atmega328.bootloader.extended_fuses=0xFD
+modelnanoplus.menu.cpu.atmega328.bootloader.file=optiboot/optiboot_atmega328.hex
+
+modelnanoplus.menu.cpu.atmega328.build.mcu=atmega328p
+
+## Arduino modelnano w/ ATmega328P (old bootloader)
+## --------------------------
+modelnanoplus.menu.cpu.atmega328old=ATmega328P (Old Bootloader)
+
+modelnanoplus.menu.cpu.atmega328old.upload.maximum_size=30720
+modelnanoplus.menu.cpu.atmega328old.upload.maximum_data_size=2048
+modelnanoplus.menu.cpu.atmega328old.upload.speed=57600
+
+modelnanoplus.menu.cpu.atmega328old.bootloader.low_fuses=0xFF
+modelnanoplus.menu.cpu.atmega328old.bootloader.high_fuses=0xDA
+modelnanoplus.menu.cpu.atmega328old.bootloader.extended_fuses=0xFD
+modelnanoplus.menu.cpu.atmega328old.bootloader.file=atmega/ATmegaBOOT_168_atmega328.hex
+
+modelnanoplus.menu.cpu.atmega328old.build.mcu=atmega328p
+
+##############################################################
+
+modelpro.name=Board Model Pro (KruFrame Robot)
+
+modelpro.vid.0=0x2341
+modelpro.pid.0=0x0010
+modelpro.vid.1=0x2341
+modelpro.pid.1=0x0042
+modelpro.vid.2=0x2A03
+modelpro.pid.2=0x0010
+modelpro.vid.3=0x2A03
+modelpro.pid.3=0x0042
+modelpro.vid.4=0x2341
+modelpro.pid.4=0x0210
+modelpro.vid.5=0x2341
+modelpro.pid.5=0x0242
+
+modelpro.upload.tool=avrdude
+modelpro.upload.tool.serial=avrdude
+modelpro.upload.maximum_data_size=8192
+
+modelpro.bootloader.tool=avrdude
+modelpro.bootloader.low_fuses=0xFF
+modelpro.bootloader.unlock_bits=0x3F
+modelpro.bootloader.lock_bits=0x0F
+
+modelpro.build.f_cpu=16000000L
+modelpro.build.core=arduino
+modelpro.build.variant=mega
+# default board may be overridden by the cpu menu
+modelpro.build.board=AVR_MEGA2560
+
+## Arduino Mega w/ ATmega2560
+## -------------------------
+modelpro.menu.cpu.atmega2560=ATmega2560 (Mega 2560)
+
+modelpro.menu.cpu.atmega2560.upload.protocol=wiring
+modelpro.menu.cpu.atmega2560.upload.maximum_size=253952
+modelpro.menu.cpu.atmega2560.upload.speed=115200
+
+modelpro.menu.cpu.atmega2560.bootloader.high_fuses=0xD8
+modelpro.menu.cpu.atmega2560.bootloader.extended_fuses=0xFD
+modelpro.menu.cpu.atmega2560.bootloader.file=stk500v2/stk500boot_v2_mega2560.hex
+
+modelpro.menu.cpu.atmega2560.build.mcu=atmega2560
+modelpro.menu.cpu.atmega2560.build.board=AVR_MEGA2560
+
+##############################################################
+
+modelproplus.name=Board Model Pro+ (KruFrame Robot)
+
+modelproplus.vid.0=0x2341
+modelproplus.pid.0=0x0010
+modelproplus.vid.1=0x2341
+modelproplus.pid.1=0x0042
+modelproplus.vid.2=0x2A03
+modelproplus.pid.2=0x0010
+modelproplus.vid.3=0x2A03
+modelproplus.pid.3=0x0042
+modelproplus.vid.4=0x2341
+modelproplus.pid.4=0x0210
+modelproplus.vid.5=0x2341
+modelproplus.pid.5=0x0242
+
+modelproplus.upload.tool=avrdude
+modelproplus.upload.tool.serial=avrdude
+modelproplus.upload.maximum_data_size=8192
+
+modelproplus.bootloader.tool=avrdude
+modelproplus.bootloader.low_fuses=0xFF
+modelproplus.bootloader.unlock_bits=0x3F
+modelproplus.bootloader.lock_bits=0x0F
+
+modelproplus.build.f_cpu=16000000L
+modelproplus.build.core=arduino
+modelproplus.build.variant=mega
+# default board may be overridden by the cpu menu
+modelproplus.build.board=AVR_MEGA2560
+
+## Arduino Mega w/ ATmega2560
+## -------------------------
+modelproplus.menu.cpu.atmega2560=ATmega2560 (Mega 2560)
+
+modelproplus.menu.cpu.atmega2560.upload.protocol=wiring
+modelproplus.menu.cpu.atmega2560.upload.maximum_size=253952
+modelproplus.menu.cpu.atmega2560.upload.speed=115200
+
+modelproplus.menu.cpu.atmega2560.bootloader.high_fuses=0xD8
+modelproplus.menu.cpu.atmega2560.bootloader.extended_fuses=0xFD
+modelproplus.menu.cpu.atmega2560.bootloader.file=stk500v2/stk500boot_v2_mega2560.hex
+
+modelproplus.menu.cpu.atmega2560.build.mcu=atmega2560
+modelproplus.menu.cpu.atmega2560.build.board=AVR_MEGA2560
+
+##############################################################
